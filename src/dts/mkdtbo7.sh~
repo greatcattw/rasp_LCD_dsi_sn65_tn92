@@ -1,0 +1,5 @@
+dtc -I dts -O dtb -o gcatlcd07.dtbo gcatlcd07.dts
+sudo cp gcatlcd07.dtbo /boot/overlays/
+md5sum gcatlcd07.dtbo
+md5sum /boot/overlays/gcatlcd07.dtbo
+sync
